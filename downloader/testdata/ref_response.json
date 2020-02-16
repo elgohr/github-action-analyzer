@@ -1,0 +1,18 @@
+{
+  "name": "dockerimage.yml",
+  "path": ".github/workflows/dockerimage.yml",
+  "sha": "16d38e0c5d694544543f409d5308bef78336967a",
+  "size": 1374,
+  "url": "https://api.github.com/repos/cnrun/strava-x-api/contents/.github/workflows/dockerimage.yml?ref=be8cc384c5a3f136a2cac2cc5c561839db62f674",
+  "html_url": "https://github.com/cnrun/strava-x-api/blob/be8cc384c5a3f136a2cac2cc5c561839db62f674/.github/workflows/dockerimage.yml",
+  "git_url": "https://api.github.com/repos/cnrun/strava-x-api/git/blobs/16d38e0c5d694544543f409d5308bef78336967a",
+  "download_url": "%s/cnrun/strava-x-api/be8cc384c5a3f136a2cac2cc5c561839db62f674/.github/workflows/dockerimage.yml",
+  "type": "file",
+  "content": "bmFtZTogRG9ja2VyIEltYWdlIENJCm9uOiBbcHVzaF0Kam9iczoKICBidWls\nZDoKICAgIHJ1bnMtb246IHVidW50dS1sYXRlc3QKICAgIHN0ZXBzOgogICAg\nLSB1c2VzOiBhY3Rpb25zL2NoZWNrb3V0QG1hc3RlcgogICAgLSBuYW1lOiBQ\ndWJsaXNoIHRvIERvY2tlciBSZXBvc2l0b3J5CiAgICAgIHVzZXM6IGVsZ29o\nci9QdWJsaXNoLURvY2tlci1HaXRodWItQWN0aW9uQG1hc3RlcgogICAgICB3\naXRoOgogICAgICAgIG5hbWU6IGNucnVuL3N0cmF2YS14LWFwaS9zdHJhdmEt\neC1hcGkKICAgICAgICB1c2VybmFtZTogJHt7IHNlY3JldHMuR0lUSFVCX1VT\nRVJOQU1FIH19CiAgICAgICAgcGFzc3dvcmQ6ICR7eyBzZWNyZXRzLkdJVEhV\nQl9UT0tFTiB9fQogICAgICAgIHJlZ2lzdHJ5OiBkb2NrZXIucGtnLmdpdGh1\nYi5jb20KICAgICAgICBkb2NrZXJmaWxlOiBTdHJhdmFYQXBpLkRvY2tlcmZp\nbGUKICAgIC0gbmFtZTogUHVibGlzaCB0byBEb2NrZXIgUmVwb3NpdG9yeQog\nICAgICB1c2VzOiBlbGdvaHIvUHVibGlzaC1Eb2NrZXItR2l0aHViLUFjdGlv\nbkBtYXN0ZXIKICAgICAgd2l0aDoKICAgICAgICBuYW1lOiBjbnJ1bi9zdHJh\ndmEteC1hcGkKICAgICAgICB1c2VybmFtZTogJHt7IHNlY3JldHMuRE9DS0VS\nX1VTRVJOQU1FIH19CiAgICAgICAgcGFzc3dvcmQ6ICR7eyBzZWNyZXRzLkRP\nQ0tFUl9QQVNTV09SRCB9fQogICAgICAgIGRvY2tlcmZpbGU6IFN0cmF2YVhB\ncGkuRG9ja2VyZmlsZQogICAgLSBuYW1lOiBQdWJsaXNoIHRvIERvY2tlciBS\nZXBvc2l0b3J5CiAgICAgIHVzZXM6IGVsZ29oci9QdWJsaXNoLURvY2tlci1H\naXRodWItQWN0aW9uQG1hc3RlcgogICAgICB3aXRoOgogICAgICAgIG5hbWU6\nIGNucnVuL3N0cmF2YS14LWFwaS9zdHJhdmEteC1hcGk6Y2hyb21lCiAgICAg\nICAgdXNlcm5hbWU6ICR7eyBzZWNyZXRzLkdJVEhVQl9VU0VSTkFNRSB9fQog\nICAgICAgIHBhc3N3b3JkOiAke3sgc2VjcmV0cy5HSVRIVUJfVE9LRU4gfX0K\nICAgICAgICByZWdpc3RyeTogZG9ja2VyLnBrZy5naXRodWIuY29tCiAgICAg\nICAgZG9ja2VyZmlsZTogU3RyYXZhWEFwaS1DaHJvbWUuRG9ja2VyZmlsZQog\nICAgLSBuYW1lOiBQdWJsaXNoIHRvIERvY2tlciBSZXBvc2l0b3J5CiAgICAg\nIHVzZXM6IGVsZ29oci9QdWJsaXNoLURvY2tlci1HaXRodWItQWN0aW9uQG1h\nc3RlcgogICAgICB3aXRoOgogICAgICAgIG5hbWU6IGNucnVuL3N0cmF2YS14\nLWFwaTpjaHJvbWUKICAgICAgICB1c2VybmFtZTogJHt7IHNlY3JldHMuRE9D\nS0VSX1VTRVJOQU1FIH19CiAgICAgICAgcGFzc3dvcmQ6ICR7eyBzZWNyZXRz\nLkRPQ0tFUl9QQVNTV09SRCB9fQogICAgICAgIGRvY2tlcmZpbGU6IFN0cmF2\nYVhBcGktQ2hyb21lLkRvY2tlcmZpbGUK\n",
+  "encoding": "base64",
+  "_links": {
+    "self": "https://api.github.com/repos/cnrun/strava-x-api/contents/.github/workflows/dockerimage.yml?ref=be8cc384c5a3f136a2cac2cc5c561839db62f674",
+    "git": "https://api.github.com/repos/cnrun/strava-x-api/git/blobs/16d38e0c5d694544543f409d5308bef78336967a",
+    "html": "https://github.com/cnrun/strava-x-api/blob/be8cc384c5a3f136a2cac2cc5c561839db62f674/.github/workflows/dockerimage.yml"
+  }
+}
