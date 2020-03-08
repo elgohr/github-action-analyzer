@@ -14,11 +14,14 @@ func TestAnalyze(t *testing.T) {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	r, err := analyzer.Analyze("elgohr/Publish-Docker-Github-Action", []downloader.ActionConfiguration{{Configuration: b}})
-	assert.NoError(t, err)
-	assert.Equal(t, 4, r.WithResult["name"])
-	assert.Equal(t, 4, r.WithResult["username"])
-	assert.Equal(t, 4, r.WithResult["password"])
-	assert.Equal(t, 2, r.WithResult["registry"])
-	assert.Equal(t, 4, r.WithResult["dockerfile"])
+	configs := make(chan downloader.ActionConfiguration, 1)
+	configs <- downloader.ActionConfiguration{Configuration: b}
+	go func() {
+		r := analyzer.Analyze("elgohr/Publish-Docker-Github-Action", configs)
+		assert.Equal(t, 4, r.WithUsages["name"])
+		assert.Equal(t, 4, r.WithUsages["username"])
+		assert.Equal(t, 4, r.WithUsages["password"])
+		assert.Equal(t, 2, r.WithUsages["registry"])
+		assert.Equal(t, 4, r.WithUsages["dockerfile"])
+	}()
 }
