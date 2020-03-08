@@ -1,4 +1,4 @@
-module github.com/elgohr/action-analyzer
+module github.com/elgohr/github-action-analyzer
 
 go 1.13
 
