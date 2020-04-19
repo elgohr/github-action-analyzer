@@ -2,7 +2,7 @@ package analyzer
 
 import (
 	"fmt"
-	"github.com/elgohr/action-analyzer/downloader"
+	"github.com/elgohr/github-action-analyzer/downloader"
 	"gopkg.in/yaml.v2"
 	"strings"
 )

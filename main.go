@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/elgohr/action-analyzer/analyzer"
-	"github.com/elgohr/action-analyzer/downloader"
+	"github.com/elgohr/github-action-analyzer/analyzer"
+	"github.com/elgohr/github-action-analyzer/downloader"
 	"github.com/urfave/cli/v2"
 	"log"
 	"os"

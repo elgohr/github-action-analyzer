@@ -1,8 +1,8 @@
 package analyzer_test
 
 import (
-	"github.com/elgohr/action-analyzer/analyzer"
-	"github.com/elgohr/action-analyzer/downloader"
+	"github.com/elgohr/github-action-analyzer/analyzer"
+	"github.com/elgohr/github-action-analyzer/downloader"
 	"github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"log"
