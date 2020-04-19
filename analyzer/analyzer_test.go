@@ -17,7 +17,7 @@ func TestAnalyze(t *testing.T) {
 	configs := make(chan downloader.ActionConfiguration, 1)
 	configs <- downloader.ActionConfiguration{Configuration: b}
 	go func() {
-		r := analyzer.Analyze("elgohr/Publish-Docker-Github-Action", configs)
+		r := analyzer.GetSummary("elgohr/Publish-Docker-Github-Action", configs)
 		assert.Equal(t, 4, r.With["name"])
 		assert.Equal(t, 4, r.With["username"])
 		assert.Equal(t, 4, r.With["password"])

@@ -7,15 +7,15 @@ import (
 	"strings"
 )
 
-func Analyze(actionName string, configs <-chan downloader.ActionConfiguration) *Result {
-	result := Result{
+func GetSummary(actionName string, configs <-chan downloader.ActionConfiguration) *Summary {
+	summary := Summary{
 		TotalRepositories: 0,
 		TotalSteps:        0,
 		With:              map[string]int{},
 	}
 	for config := range configs {
 		fmt.Println(fmt.Sprintf("analyzing usage in %s", config.Name))
-		result.TotalRepositories += 1
+		summary.TotalRepositories += 1
 		var parsedConfig Configuration
 		if err := yaml.Unmarshal(config.Configuration, &parsedConfig); err != nil {
 			fmt.Println(err)
@@ -23,22 +23,22 @@ func Analyze(actionName string, configs <-chan downloader.ActionConfiguration) *
 		for _, build := range parsedConfig.Jobs {
 			for _, step := range build.Steps {
 				if strings.HasPrefix(step.Uses, actionName) {
-					result.TotalSteps += 1
+					summary.TotalSteps += 1
 					for key := range step.With {
-						if count, exists := result.With[key]; exists {
-							result.With[key] = count + 1
+						if count, exists := summary.With[key]; exists {
+							summary.With[key] = count + 1
 						} else {
-							result.With[key] = 1
+							summary.With[key] = 1
 						}
 					}
 				}
 			}
 		}
 	}
-	return &result
+	return &summary
 }
 
-type Result struct {
+type Summary struct {
 	TotalRepositories int
 	TotalSteps        int
 	With              map[string]int

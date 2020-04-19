@@ -46,7 +46,7 @@ func main() {
 							fmt.Fprintln(os.Stderr, err)
 						}
 					}(errs)
-					res := analyzer.Analyze(actionName, cs)
+					res := analyzer.GetSummary(actionName, cs)
 					b, err := json.MarshalIndent(res, "", "  ")
 					if err != nil {
 						return err
