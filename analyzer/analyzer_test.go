@@ -18,10 +18,10 @@ func TestAnalyze(t *testing.T) {
 	configs <- downloader.ActionConfiguration{Configuration: b}
 	go func() {
 		r := analyzer.Analyze("elgohr/Publish-Docker-Github-Action", configs)
-		assert.Equal(t, 4, r.WithUsages["name"])
-		assert.Equal(t, 4, r.WithUsages["username"])
-		assert.Equal(t, 4, r.WithUsages["password"])
-		assert.Equal(t, 2, r.WithUsages["registry"])
-		assert.Equal(t, 4, r.WithUsages["dockerfile"])
+		assert.Equal(t, 4, r.With["name"])
+		assert.Equal(t, 4, r.With["username"])
+		assert.Equal(t, 4, r.With["password"])
+		assert.Equal(t, 2, r.With["registry"])
+		assert.Equal(t, 4, r.With["dockerfile"])
 	}()
 }

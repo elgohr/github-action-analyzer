@@ -8,7 +8,7 @@ $ anlyzer -name=my-repository -access-token=my-token summary
 {
   "TotalRepositories": 1020,
   "TotalSteps": 1270,
-  "WithUsages": {
+  "With": {
     "actions_token": 1,
     "auto_tag": 1,
     "buildargs": 90,

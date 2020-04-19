@@ -11,7 +11,7 @@ func Analyze(actionName string, configs <-chan downloader.ActionConfiguration) *
 	result := Result{
 		TotalRepositories: 0,
 		TotalSteps:        0,
-		WithUsages:        map[string]int{},
+		With:              map[string]int{},
 	}
 	for config := range configs {
 		fmt.Println(fmt.Sprintf("analyzing usage in %s", config.Name))
@@ -25,10 +25,10 @@ func Analyze(actionName string, configs <-chan downloader.ActionConfiguration) *
 				if strings.HasPrefix(step.Uses, actionName) {
 					result.TotalSteps += 1
 					for key := range step.With {
-						if count, exists := result.WithUsages[key]; exists {
-							result.WithUsages[key] = count + 1
+						if count, exists := result.With[key]; exists {
+							result.With[key] = count + 1
 						} else {
-							result.WithUsages[key] = 1
+							result.With[key] = 1
 						}
 					}
 				}
@@ -41,7 +41,7 @@ func Analyze(actionName string, configs <-chan downloader.ActionConfiguration) *
 type Result struct {
 	TotalRepositories int
 	TotalSteps        int
-	WithUsages        map[string]int
+	With              map[string]int
 }
 
 type Configuration struct {
