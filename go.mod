@@ -8,5 +8,5 @@ require (
 	github.com/stretchr/testify v1.5.1
 	github.com/tomnomnom/linkheader v0.0.0-20180905144013-02ca5825eb80
 	github.com/urfave/cli/v2 v2.2.0
-	gopkg.in/yaml.v2 v2.2.8
+	gopkg.in/yaml.v2 v2.3.0
 )
